@@ -7,14 +7,15 @@
             http-equiv="Content-Security-Policy"
             content="default-src 'self'; script-src 'self'"
         />
-        <meta
-            http-equiv="X-Content-Security-Policy"
-            content="default-src 'self'; script-src 'self'"
-        />
+        <link rel="stylesheet" type="text/css" href="./styles.css" />
         <title>Hello World!</title>
     </head>
     <body>
         <h1>Hello World!</h1>
+        <p>Current theme source: <strong id="theme-source">System</strong></p>
+
+        <button id="toggle-dark-mode">Toggle Light Mode</button>
+        <button id="reset-to-system">Reset to System Theme</button>
     </body>
-    <script src="./renderer.ts"></script>
+    <script src="./renderer.js"></script>
 </html>
