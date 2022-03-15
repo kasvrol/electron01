@@ -1,7 +1,7 @@
-const { app, BrowserWindow } = require('electron')
+const { app, BrowserWindow } = require('electron');
 
 // include the Node.js 'path' module at the top of your file
-const path = require('path')
+const path = require('path');
 
 // modify your existing createWindow() function
 const createWindow = () => {
@@ -11,22 +11,21 @@ const createWindow = () => {
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
-    })
-    win.loadFile('index.html')
-}
+    });
+    win.loadFile('index.html');
+};
 //axsfcdsc
 
-
 app.whenReady().then(() => {
-    createWindow()
+    createWindow();
 
     app.on('activate', () => {
-        if (BrowserWindow.getAllWindows().length === 0) createWindow()
-        })
-})
+        if (BrowserWindow.getAllWindows().length === 0) createWindow();
+    });
+});
 
 app.on('window-all-closed', () => {
     if (process.platform !== 'darwin') {
-        app.quit()
+        app.quit();
     }
-})
+});
