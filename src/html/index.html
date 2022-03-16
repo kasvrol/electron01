@@ -11,11 +11,37 @@
         <title>Hello World!</title>
     </head>
     <body>
-        <h1>Hello World!</h1>
-        <p>Current theme source: <strong id="theme-source">System</strong></p>
+        <section>
+            <p>
+                Escolha o tema da página:
+                <strong id="theme-source">Sistema</strong>
+            </p>
 
-        <button id="toggle-dark-mode">Toggle Light Mode</button>
-        <button id="reset-to-system">Reset to System Theme</button>
+            <button id="toggle-dark-mode">Tema claro</button>
+            <button id="reset-to-system">Tema original</button>
+        </section>
+        <section>
+            <h1>Cadastro Rápido</h1>
+            <form>
+                <label> E-mail: </label>
+                <input type="email" />
+                <label>Qual o tamanho da senha?</label>
+                <input
+                    type="number"
+                    id="numeroDeCarecteresDaSenha"
+                    min="8"
+                    max="15"
+                />
+                <button id="gerarSenha">Gerar senha</button>
+                <label>Sua senha será:</label>
+                <span id="senhaGerada"></span>
+                <label>Digite sua senha aqui:</label>
+                <input />
+                <label>Confirme seu cadastro:</label>
+                <button>Quero me Cadastrar</button>
+            </form>
+        </section>
     </body>
     <script src="../js/renderer.js"></script>
+    <script src="../js/geradorDeSenha.js"></script>
 </html>
