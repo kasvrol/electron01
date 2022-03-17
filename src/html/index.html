@@ -8,37 +8,51 @@
             content="default-src 'self'; script-src 'self'"
         />
         <link rel="stylesheet" type="text/css" href="../css/styles.css" />
-        <title>Hello World!</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Saira+Condensed:wght@300&display=swap"
+            rel="stylesheet"
+        />
+        <title>Cadastro Rápido</title>
     </head>
     <body>
-        <section>
+        <section class="tema-da-pagina">
             <p>
                 Escolha o tema da página:
                 <strong id="theme-source">Sistema</strong>
             </p>
 
-            <button id="toggle-dark-mode">Tema claro</button>
-            <button id="reset-to-system">Tema original</button>
+            <input type="range" id="opcaoDeTema" name="vol" min="0" max="1" />
+            <button id="botaoDeConfirmacaoDeTema">Escolher</button>
         </section>
-        <section>
-            <h1>Cadastro Rápido</h1>
-            <form>
-                <label> E-mail: </label>
-                <input type="email" />
-                <label>Qual o tamanho da senha?</label>
-                <input
-                    type="number"
-                    id="numeroDeCarecteresDaSenha"
-                    min="8"
-                    max="15"
-                />
-                <button id="gerarSenha">Gerar senha</button>
-                <label>Sua senha será:</label>
-                <span id="senhaGerada"></span>
-                <label>Digite sua senha aqui:</label>
-                <input />
-                <label>Confirme seu cadastro:</label>
-                <button>Quero me Cadastrar</button>
+        <section class="caixa-de-cadastro">
+            <p>Cadastro Rápido</p>
+            <form class="formulario">
+                <section>
+                    <label> E-mail: </label>
+                    <input type="email" />
+                </section>
+                <section>
+                    <label>Qual o tamanho da senha?</label>
+                    <input
+                        type="number"
+                        id="numeroDeCarecteresDaSenha"
+                        min="8"
+                        max="15"
+                    />
+                    <button id="gerarSenha">Gerar senha</button>
+                </section>
+                <section>
+                    <label>Sua senha será:</label>
+                    <span id="senhaGerada"></span>
+                </section>
+                <section>
+                    <label>Digite sua senha aqui:</label>
+                    <input />
+                </section>
+                <section>
+                    <label>Confirme seu cadastro:</label>
+                    <button>Quero me Cadastrar</button>
+                </section>
             </form>
         </section>
     </body>
