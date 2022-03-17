@@ -20,7 +20,7 @@
 
 * Clone este repositório
 ```bash
-git clone <https://github.com/kasvrol/electron01>
+git clone https://github.com/kasvrol/electron01
 ```
 * Acesse a pasta do projeto no terminal/cmd
 ```bash
