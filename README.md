@@ -1,7 +1,10 @@
 <h1>Electron.js 01 🌩</h1>
 
 <h2>Sobre 🧐</h2>
-    <p text-aling = justify>Primeiro estudo realizado com o framework electron.js aonde o objetivo era criar uma página de cadastro como as que abrem sozinha pelo browser ao tentar se cadastrar em aplicativos instalados no computador</p>
+    <p text-aling = justify>Primeiro estudo realizado com o framework electron.js aonde o objetivo era criar uma página de cadastro com tema sugerido através do sistema do computador e com criação de senha codificada sugerida durante o próprio cadastro.</p>
+    
+![Print 01](https://github.com/kasvrol/electron01/blob/main/src/tema-claro.png)
+![Print 02](https://github.com/kasvrol/electron01/blob/main/src/tema-escuro.png)
 
 <h2>Ferramentas e tecnologias utilizadas 🛠</h2>
 
