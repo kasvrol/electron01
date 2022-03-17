@@ -18,7 +18,7 @@
         <section class="tema-da-pagina">
             <p>
                 Escolha o tema da página:
-                <strong id="theme-source">Sistema</strong>
+                <img class="tema-da-pagina-img" src="../luz.png" />
             </p>
 
             <input type="range" id="opcaoDeTema" name="vol" min="0" max="1" />
@@ -39,19 +39,23 @@
                         min="8"
                         max="15"
                     />
-                    <button id="gerarSenha">Gerar senha</button>
+                    <button id="gerarSenha" class="botao-gerar-senha">
+                        Gerar senha
+                    </button>
                 </section>
                 <section>
                     <label>Sua senha será:</label>
-                    <span id="senhaGerada"></span>
+                    <p id="senhaGerada"></p>
                 </section>
                 <section>
                     <label>Digite sua senha aqui:</label>
                     <input />
                 </section>
                 <section>
-                    <label>Confirme seu cadastro:</label>
-                    <button>Quero me Cadastrar</button>
+                    <p>Confirme seu cadastro:</p>
+                    <button class="botao-de-cadastro">
+                        Quero me Cadastrar
+                    </button>
                 </section>
             </form>
         </section>
